@@ -47,5 +47,5 @@ function fractionFactorial() {
 
     resultNandM = nResult / mResult;
 
-    document.getElementById('res_two').innerHTML = `${n}! / ${m}! дорівнює ${resultNandM}`;
+    document.getElementById('res_two').innerHTML = `<div style="font-size: 16px;">${n}! / ${m}! дорівнює ${resultNandM}</div>`;
 }
