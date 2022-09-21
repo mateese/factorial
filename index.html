@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <div class="container">
+                <div class="inner__factorial">
+                    <h2>Факторіал цілого числа</h2>
+                    <label for="">
+                        <div class="title">Введіть факторіал:</div>
+                        <input id="int_fac" class="input__int input" type="text" name="factorial" value="">
+                        <div>
+                            <div id="res_one" class="result"></div>
+                            <div class="inner__button">
+                                <a class="button" onclick="integerFactorial()" href="#">
+                                    <div class="btn">Розрахувати</div>
+                                </a>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <div class="inner__factorial">
+                    <h2>Факторіал з дробом</h2>
+                    <label for="">
+                        <div class="row__fraction">
+                            <div class="row__input">
+                                <div class="title title__fraction">Введіть чисельник:</div>
+                                <input id="frac_fac_one" class="input__int input" type="text" name="factorial" value="">
+                            </div>
+                            <div class="row__input">
+                                <div class="title title__fraction">Введіть знаменник:</div>
+                                <input id="frac_fac_two" class="input__int input" type="text" name="factorial" value="">
+                            </div>
+                        </div>
+                        <div>
+                            <div id="res_two" class="result"></div>
+                            <div class="inner__button">
+                                <a class="button" onclick="fractionFactorial()" href="#">
+                                    <div class="btn">Розрахувати</div>
+                                </a>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
