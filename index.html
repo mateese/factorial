@@ -8,7 +8,7 @@
     <title>factorial</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -16,7 +16,7 @@
     <div class="wrapper">
         <main class="main">
             <div class="container">
-                <div class="inner__factorial">
+                <div id="fac_1" class="inner__factorial">
                     <h2>Факторіал цілого числа</h2>
                     <label for="">
                         <div class="title">Введіть факторіал:</div>
@@ -24,7 +24,7 @@
                         <div>
                             <div id="res_one" class="result"></div>
                             <div class="inner__button">
-                                <a class="button" onclick="integerFactorial()" href="#">
+                                <a class="button" onclick="integerFactorial()" href="#fac_1">
                                     <div class="btn">Розрахувати</div>
                                 </a>
                             </div>
@@ -32,29 +32,72 @@
                     </label>
                 </div>
 
-                <div class="inner__factorial">
-                    <h2>Факторіал з дробом</h2>
+                <div id="fac_2" class="inner__factorial">
+                    <h2>Факторіал дроба:<img class="image" src="img/1.svg" alt="factorial"></h2>
                     <label for="">
                         <div class="row__fraction">
                             <div class="row__input">
-                                <div class="title title__fraction">Введіть чисельник:</div>
+                                <div class="title title__fraction">Введіть a! (чисельник):</div>
                                 <input id="frac_fac_one" class="input__int input" type="tel" name="factorial" value="">
                             </div>
                             <div class="row__input">
-                                <div class="title title__fraction">Введіть знаменник:</div>
+                                <div class="title title__fraction">Введіть b! (знаменник):</div>
                                 <input id="frac_fac_two" class="input__int input" type="tel" name="factorial" value="">
                             </div>
                         </div>
                         <div>
                             <div id="res_two" class="result"></div>
                             <div class="inner__button">
-                                <a class="button" onclick="fractionFactorial()" href="#">
+                                <a class="button" onclick="fractionFactorial()" href="#fac_2">
                                     <div class="btn">Розрахувати</div>
                                 </a>
                             </div>
                         </div>
                     </label>
                 </div>
+
+                <div id="gamma_1" class="inner__factorial">
+                    <h2>Гамма функція: <span class="R">Г= (a)</span></h2>
+                    <label for="">
+                        <div class="title">Введіть число:</div>
+                        <input name="factorial" value="" id="gamma_fac" class="input__int input" type="tel">
+                        <div>
+                            <div id="res_gamma" class="result"></div>
+                            <div class="inner__button">
+                                <a id="gammaOne" class="button" href="#gamma_1">
+                                    <div class="btn">Розрахувати</div>
+                                </a>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+
+                <!-- <div id="fac_4" class="inner__factorial">
+                    <h2>Гамма функція: <span class="R">Г=</span><img class="image_two" src="img/2.svg" alt="factorial">
+                    </h2>
+                    <label for="">
+                        <div class="row__fraction">
+                            <div class="row__input">
+                                <div class="title title__fraction">Введіть a! (чисельник):</div>
+                                <input id="frac_fac_four_one" class="input__int input" type="tel" name="factorial"
+                                    value="">
+                            </div>
+                            <div class="row__input">
+                                <div class="title title__fraction">Введіть b! (знаменник):</div>
+                                <input id="frac_fac_four_two" class="input__int input" type="tel" name="factorial"
+                                    value="">
+                            </div>
+                        </div>
+                        <div>
+                            <div id="res_four" class="result"></div>
+                            <div class="inner__button">
+                                <a class="button" onclick="fractionFactorialAll()" href="#fac_4">
+                                    <div class="btn">Розрахувати</div>
+                                </a>
+                            </div>
+                        </div>
+                    </label>
+                </div> -->
             </div>
         </main>
     </div>
@@ -65,3 +108,5 @@
 </body>
 
 </html>
+
+<!-- терафлю або фервекс або колдрекс -->
