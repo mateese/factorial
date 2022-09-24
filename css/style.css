@@ -119,6 +119,7 @@ h2 {
     height: 70px;
     margin-top: 20px;
     padding: 5px 5px;
+    overflow: auto;
 }
 
 .input {
